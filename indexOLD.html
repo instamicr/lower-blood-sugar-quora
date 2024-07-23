@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="PNG/FAVICON.PNG"/>
+    <meta charset="utf-8">
+    <link href="CSS/CSS2F4EC.CSS?family=Josefin+Sans:wght@400;500&amp;family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300;1,600&amp;display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --glucoBlue: #4589C8;
+          --glucoLightBlue: #F6FBFF;
+            --dark: #27261D;
+            --beige: #FFF8EE;
+            --highlight: #f4dcde;
+            --glucoNavy: #104569;
+        }
+        body, body p, body ul li, body ol li {
+            color: var(--dark);
+            font-family: Montserrat !important;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 30px;
+        }
+        .container-fluid .container {
+            max-width: 940px;
+        }
+        .container-fluid {
+            padding:0 !Important;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Josefin Sans' !important;
+        }
+
+        .main {color:var(--glucoBlue);}
+      .glucoNavy { color: var(--glucoNavy) !important; }
+        .dark {color:var(--dark) !important;}
+        .round { border-radius:30px; }
+
+        .bg-beige { background-color: var(--beige) !important; }
+
+        a:hover {
+            color: white !important;
+        }
+        strong, b {font-weight:600 !important;color:var(--glucoNavy);}
+        .sections-container > .section > .container-fluid .container {
+            padding: 90px 0px;
+
+        }
+        .row-s-bp {
+            padding-bottom:24px;
+        }
+        .row-m-bp {
+            padding-bottom:60px;
+        }
+        .row-l-bp {
+            padding-bottom:95px;
+        }
+        .mark, mark {
+          padding: 0.1em 0.2em !Important;
+          background: var(--glucoBlue) !important;
+          font-weight: 600;
+          color: white;
+        }
+        img {
+            max-width: 100%;
+        }
+
+        .title {
+            font-size: 46px;
+            font-weight: 600;
+            line-height: 65px;
+            color: var(--glucoBlue);
+          letter-spacing:-1px;
+        }
+
+        .ingredientsTitle {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0em;
+            text-transform: uppercase;
+        }
+
+        .title2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 46px;
+            color: var(--glucoNavy);
+          letter-spacing:-1px;
+        }
+
+        .button {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 12px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: var(--glucoBlue);
+            border-radius: 200px;
+            color:white;
+        }
+
+        /***** Media Queries ****/
+    @media screen and (max-width:992px) {
+        .sections-container > .section > .container-fluid .container  {
+            padding: 40px 30px !important;
+        }
+    }
+  
+    @media screen and (max-width:767px) {
+        body, body p, body ul li, body ol li {
+            font-size: 20px !important;
+            line-height: 28px !important;
+          font-weight: 400;
+
+        }
+      .back {
+    clip-path: polygon(0% 28%, 100% 22%, 100% 100%, 0 100%) !important;
+}
+      	h1.title {
+            max-width:317px !Important;
+          float:none;
+          margin: 0 auto;
+        }
+        .title {
+            font-size: 38px !important;
+            line-height:54px !important;
+        }
+      img.headerLogo.row-l-bp {
+          padding-bottom: 60px;
+      }
+      .mainImage { width:372px;}
+        .title2, .ingredientsTitle {
+            font-size: 27px !important;
+            line-height: 37px !important;
+        }
+        .row-m-bp {
+            padding-bottom:20px !important;
+        }
+        .section_back_right {
+            right: -53px !important;
+            top: 34vh !important;
+            width: 145px !important;
+        }
+      .bonusSection.section .container-fluid {
+          /*background: url(/new_design/images/glucotrust_bonuses.webp);
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding-top: 160px !important;*/
+      }
+      .bonusSection.section {
+          background: linear-gradient(180deg, rgb(233 232 235) -54.8%, rgba(246, 251, 255, 0) 100%) !important;
+      }
+      .bonusSection.section .container-fluid .container {
+          padding-bottom: 0 !important;
+      }
+      .icons img {
+          max-width: 79px !important;
+          margin-right: 1em;
+      }
+      #biotin {
+        background-image: url('WEBP/CUTOUT__BIOTIN_1_2_2.WEB') !important;
+        background-size: auto !important;
+      }
+
+      #chromium {
+        background-image: url('WEBP/CUTOUT__CHROMIUM_1_2.WEB') !important;
+        background-size: auto !important;
+      }
+      #manganese {
+        background-image: url('WEBP/CUTOUT__MANGANESE_1_2.WEB') !important;
+        background-size: auto !important;
+      }
+
+      #licorice {
+        background-image: url('WEBP/CUTOUT__LICORICE_2_2_2.WEB') !important;
+        background-size: auto !important;
+      }
+
+      #cinamon {
+        background-image: url('WEBP/CUTOUT__CINNAMON_1_2.WEB') !important;
+        background-size: auto !important;
+      }
+
+      #zinc {
+        background-image: url('WEBP/CUTOUT__ZINC_1_2.WEB') !important;
+        background-size: auto !important;
+      }
+
+      #juniper {
+        background-image: url('WEBP/MASK_GROUP_10_2.WEB') !important;
+        background-size: auto !important;
+      }
+    
+    }
+
+    @media screen and (min-width:1200px) {
+        .container.wide {
+            max-width: 1080px;
+        }
+    }
+
+</style>
+
+
+
+    
+      <script src="JS/JQUERY_MIN.JS"></script><link href="CSS/BOOTSTRAP_MIN.CSS" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+    <div class="container px-0" style="background: #D9D9D9;max-width:100%;">
+        <div class="page_container bg-white">
+    <!-- <div class="header container-fluid pt-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="/new_design/images/gluco_logo.svg" width="269" height="" alt="glucotrust logo">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="sections-container text-lg-left">
+        <div class="section position-relative" style="background-color: var(--glucoLightBlue);">
+            <div class="container-fluid">
+                <div class="container pt-5 text-center">
+
+
+                    <div class="section_back d-none d-lg-block" style=""><img src="PNG/MASK_GROUP_4.PNG" width="" alt="celory" style="position: absolute;right: 0;top: 15vh;width: 145px;z-index: 9;"></div>
+                    <div class="section_back d-none d-lg-block" style=""><img src="PNG/MASK_GROUP.PNG" width="" alt="celory" style="position: absolute;left: 0;top: 41vh;width: 145px;"></div>
+                    <div class="back" style="position: absolute;left: 0;top: 0;background: var(--beige);right: 0;bottom: 0;clip-path: polygon(0% 36%, 100% 17%, 100% 100%, 0 100%);"></div>
+                    <div class="section_back_right_mobile d-lg-none"><img src="WEBP/MASK_GROUP_11_2.WEB" width="" alt="Chicoryy" style="position: absolute;right: 0;top: 21vh;width: 90px;"></div>
+                    <div class="section_back_left d-lg-none"><img src="WEBP/MASK_GROUP_12_2.WEB" width="" alt="celory" style="position: absolute;left: 0;top: 22vh;width: 75px;"></div>
+					
+					<br>
+                    <div class="row row-m-bp">
+                        <div class="col-12">
+                            <h1 class="title text-center"><span class="dark">How I Achieved Healthy Blood Sugar Levels</span><br>After Many Years of Total Suffering</h1>
+                        </div>
+                        
+                    </div>
+                    <!-- <img style="position: absolute;left: 0;top: 92vh;width: 126px;" src="/new_design/images/Cutout - Gymnema 3-2.webp" width="" alt="Cutout - Gymnema 3-2.webp" class="d-lg-none"> -->
+                    <div class="row">
+
+                        <div class="col-12 text-left">
+						<br>
+                            <p class="text-lg-left">The biggest question I get asked is, “I’m not loosing weight and my blood sugar doesn’t improve at all. Is this something I need to worry about?”</p>
+                            <p class="text-lg-left">Do you have similar questions? Right here, I will share with you the step-by-step formula I used to lower my high blood sugar (glucose) to healthy levels permanently. This formula also allows me to enjoy deeper, more restful sleep...</p>
+                            <p class="text-lg-left">And even reduces my hunger cravings, making it easier for me to lose weight without having to stick with a bland diet.</p>
+
+
+                            <div class="icons text-center row-s-bp d-lg-flex justify-content-between align-items-center">
+                                <p class="align-items-center d-flex d-lg-block justify-content-center text-left text-lg-center"><img src="SVG/WEBSITE_1_VECTORS_02_1.SVG" width="127" height="" alt="Promoting healthy blood icon" class="mb-3 w-100 w-auto">Promotes healthy blood flow and circulation</p>
+                                <p class="align-items-center d-flex d-lg-block justify-content-center text-left text-lg-center"><img src="SVG/WEBSITE_1_VECTORS_01_1.SVG" width="115" height="" alt="Reducing sugar and junk food cravings icon" class="mb-3 w-100 w-auto">Reduces sugar and junk food cravings</p>
+                                <p class="align-items-center d-flex d-lg-block justify-content-center text-left text-lg-center"><img src="SVG/WEBSITE_1_VECTORS_03_1.SVG" width="97" height="" alt="Supporting deep, rejuvenating sleep icon" class="mb-3 w-100 w-auto">Supports deep, rejuvenating sleep</p>
+                            </div>
+							<br>
+						<p class="mb-0 d-flex justify-content-center"><a class="popupBtn" href="https://sugar.com" id="continueWatching">WATCH NOW</a></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section position-relative bg-white">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="section_back d-none d-lg-block" style=""><img src="PNG/MASK_GROUP_5.PNG" width="" alt="Mask group-5.png" style="position: absolute;right: 0;top: -23vh;"></div>
+                    <div class="d-none d-lg-block"><img style="position: absolute;left: 0;bottom: 0;" src="PNG/MASK_GROUP_3.PNG" width="" alt="celory"></div>
+                    <div class="section_back_2_left d-lg-none" ><img style="position: absolute;right: 0;top: -11vh;width: 80px;" src="WEBP/CUTOUT__GYMNEMA_2_2_2.WEB" width="" alt="Cutout - Gymnema 3-2.webp"></div>
+                    <div class="d-lg-none"><img style="position: absolute;left: 0;top: 40%;width: 100px;bottom: 0;margin: 0;" src="WEBP/CUTOUT__GYMNEMA_2_3_2.WEB" width="" alt="celory"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+<style>
+    .exit-modal {
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 70%);
+        z-index: 99999999999;
+        
+    }
+    .exitModalContainer {
+        border-radius: 10px;
+        position: relative;
+    }
+    .exit-modal .exit-modal-inner {
+        max-width: 800px;
+        padding: 0 0.5em;
+        background: linear-gradient(180deg, rgba(69, 137, 200, 0.75) -54.8%, rgba(246, 251, 255, 0) 50%);
+        text-align: center;
+    }
+    .exit-modal-inner-content {
+        max-width: 936px;
+        float: none;
+        margin: 0 auto;
+    }
+    .exit-modal h2 {
+                font-weight: 800;
+    font-size: 75px;
+    line-height: 75px;
+    color: var(--main);
+    }
+    .exit-modal h3 {
+        font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    }
+    .exit-modal p {
+        font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    }
+    .exit-modal #timer {
+        font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    }
+    .popupBtn {
+            font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    background: var(--glucoNavy);
+    padding: 20px 30px;
+    color: white;
+    }
+    .exit-modal .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 60px;
+            font-weight: 100;
+            color: black;
+            line-height: 30px;
+    }
+
+    div#exitModal.active {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width:767px) {
+        .exit-modal .exit-modal-inner {
+           background: linear-gradient(180deg, rgba(69, 137, 200, 0.75) -54.8%, rgba(246, 251, 255, 0) 29%) !important;
+        }
+        .exit-modal h2 {
+            font-size: 50px !important;
+            line-height: 50px !important;
+        }
+        .exit-modal h3 {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        .exit-modal #timer {
+            font-size: 51px !important;
+            line-height: 70px !important;
+        }
+        .popupBtn {
+            font-size: 18px !important;
+            line-height: 20px !important;
+            border-radius: 10px !important;
+            padding: 20px 20px !important;
+        }
+        .exit-modal p {
+            font-weight: 300;
+            font-size: 18px !important;
+            line-height: 26px !important;
+        }
+        .productImage {
+            max-width: 250px;
+        }
+    }
+</style>
+
+</body>
+
+
+<!----- Footer ------->
+<style>
+#footer {
+      background-color: #114568;
+    	padding: 48px 0;
+    	text-align: center;
+    }
+    div#footer li a{
+            color: wheat;
+          font-size: 12px;
+          line-height: 1em;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 600;
+    }
+    #discalimer p {
+        color: gainsboro;
+        font-size: 13px !important;
+    		line-height: 17px !important;
+    }
+    div#footer li a:hover, div#footer li a.active {
+        color: white !important;
+    }
+  @media screen and (min-width:576px) {
+    div#footer-menu ul li a:after {
+        content: "|";
+        padding: 0 0px 0 15px;
+    }
+    div#footer-menu ul li:last-child a:after {
+        content: "";
+    }
+  }
+
+
+</style>
+<div id="footer" class="container-fluid py-5">
+
+  
+
+</div>
+</html>

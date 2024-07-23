@@ -1,0 +1,287 @@
+:root{
+  --gGreen:#C09E07;
+  --gBlue:#032B43;
+  --gLBlue:#3f88c5;
+  --gTBlue:#375F7C;
+  --gOrange:#ffba08;
+  --rred: #e63946;
+  --psRed: #731f23;
+  --psLp: #f6ded4;
+  --priceGreen : #15a535;
+  --accent: #e63946;
+}
+.gGreen {color:var(--gGreen);}
+.gBlue {color:var(--gBlue);}
+.gLBlue {color:var(--gLBlue);}
+.gOrange {color:var(--gOrange);}
+.bg-rred {background-color: var(--rred) !Important;}
+.bg-body {background-color:#eef2f6 !important;}
+.bg-gGreen { background-color:var(--gGreen) !important;}
+.bg-gBlue { background-color:#52211c !important;}
+.bg-gLBlue { background-color:var(--gLBlue) !important;}
+.mark, mark {
+    padding: 0 .2em  !Important;
+    border-radius: 3px !important;
+}
+h1 span, h2 span, h3 span, h4 span {
+  color:var(--accent);
+}
+t {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--gOrange);
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 72%);
+}
+.max-800 {
+    max-width: 800px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.max-600 {
+    max-width: 600px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ul.BulletPoints {
+    list-style: none;
+    padding: 0;
+}
+ul.BulletPoints li {
+    list-style: none;
+    display: table;
+    margin-bottom: .5em;
+}
+ul.BulletPoints li:before {
+    content: "";
+    font-family: 'fontawesome';
+    padding-right: 10px;
+    display: table-cell;
+}
+ul.BulletPoints.question li:before {
+  content: "\f059";
+}
+ul.BulletPoints.check li:before {
+    content: "\f00c";color:green;
+}
+
+ul.BulletPoints.checkTick li:before {
+    content: "\f046";
+  color:green !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
+.boldIt {
+  font-weight:bold;
+}
+.h2, h2 {
+    font-size: 2.25rem;
+}
+.container {
+  padding: 1em 0;
+}
+body, p,ul li {
+  font-size: 1.5rem;
+  line-height: 1.4em;
+}
+.rred {
+  color: var(--rred);
+}
+.down-cut-blue {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    right: 0;
+    border-top: 20px solid var(--rred);
+    border-right: 30px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 30px solid transparent;
+    margin: auto;
+    top: 100%;
+}
+ul.checkmark li {
+  list-style: none;
+  line-height: 33px;
+  display: table;
+  margin-bottom: 1em;
+}
+ul.checkmark li:before {
+  content: "\f00c";
+  font-family: 'fontawesome';
+  padding-right: 10px;
+  display: table-cell;
+}
+ul.checkmark {padding-left: 0;}
+
+.testimonial {
+  font-style: italic;
+  border: 3px solid #CB9903;
+}
+.testimonial h4 {
+  font-size: 20px;
+  margin-bottom: 0 !important;
+}
+.testimonial:before {
+  content: "";
+  left: -20px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background: url(../ICON_MAN.HTM);
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+p.image_discalimer {
+  font-size: 10px;
+  text-align: center;
+  font-style: italic;
+  color: grey;
+}
+p.image_discalimer:after {
+  content: "* this image represents a digital download product (PDF) that can be read on any device";
+}
+.no-thanks {
+    color: #e73631 !important;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 21px !important;
+}
+.redBtn {
+  border-radius: 5px;
+  background-color: var(--gGreen);
+  font-size: 24px;
+  color: #f5f5f5;
+  border-bottom: 4px solid #0b5349;
+  line-height: 1em;
+  padding: 1.5em 1.5em;
+  text-transform: uppercase;
+}
+.redBtn:hover {
+  background: #a88a06 !important;
+  color: white !important;
+}
+.upgradeBtn {
+        font-size: 28px;
+        margin: auto;
+        color: white !important;
+        border-bottom: 8px solid #3e0202;
+        background: rgb(219,53,54);
+        background: linear-gradient(180deg, rgba(219,53,54,1) 0%, rgb(135 0 1) 100%);
+        line-height: initial;
+        border-radius: 10px;
+      min-width:50%;
+      
+    }
+    .upgradeBtn > :first-child {
+        border-right: 2px solid #7c0001 !important;
+    }
+    .upgradeBtn >:last-child {
+        width: 100%;
+        justify-content: center;
+    }
+    a.upgradeBtn:hover {
+        background: linear-gradient(180deg, rgb(150 32 33) 0%, rgb(215 5 6) 100%) !important;
+    }
+    .pulsing {
+        transform: scale(1);
+        animation: pulsing 1.5s infinite;
+    }
+    @keyframes pulsing {
+        0% {
+            transform: scale(1);
+
+          box-shadow:0px 0px 0px rgb(0 0 0 / 70%) !important;
+        }
+
+        70% {
+            transform: scale(1.034);
+
+          box-shadow:0px 0px 10px rgb(0 0 0 / 70%) !important;
+        }
+
+        100% {
+            transform: scale(1);
+          box-shadow:0px 0px 0px rgb(0 0 0 / 70%) !important;
+        }
+    }
+.picture-full-radius {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.wistia_embed > div{
+  box-shadow: 0px 0px 0px 4px black;
+}
+.bonusBox .p-3 {
+    background: var(--gTBlue);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1em !important;
+  color:white;
+}
+.strikeout {
+    position: relative;
+}
+.bonusBox .p-3 > p:last-child {
+    font-size: 20px;
+}
+.strikeout:after {
+    border-bottom: 0.125em solid var(--rred);
+    content: "";
+    left: 0;
+    margin-top: calc(0.125em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.bonusBox .p-2 {
+    background: black;
+    padding: 10px 15px !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: initial;
+    text-align: center;
+}
+.light-blue, .yellow-text {
+    color: var(--gOrange) !important;
+}
+img {
+    max-width: 100%;
+}
+@media screen and (min-width:1200px) {
+    .bigScreenHead {
+        font-size: 170% !important;
+    }
+}
+@media screen and (max-width:767px) {
+  h1 {font-size:30px !important;}
+  h2 {font-size:27px !important;}
+  .redBtn {
+    font-size: 18px !important;
+    padding: .8em !Important;
+  }
+  body, body p, ul li, ol li {
+    font-size:18px !Important;
+  }
+}
+@media screen and (min-width:576px) {
+  .upgradeBtn{
+    font-size:28px !Important;
+  }
+}
